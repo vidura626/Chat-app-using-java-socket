@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatApp.controller.LogFormController">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="150.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@assets/user.png"/>
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="txtUsername" alignment="CENTER" labelFloat="true" layoutX="176.0" layoutY="329.0"
+                      onAction="#txtUsernameOnAction" prefHeight="46.0" prefWidth="449.0" promptText="Username">
+            <font>
+                <Font size="21.0"/>
+            </font>
+        </JFXTextField>
+        <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="356.0" layoutY="423.0" onAction="#btnLogOnAction"
+                   text="Log In">
+            <font>
+                <Font name="System Bold" size="21.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>
